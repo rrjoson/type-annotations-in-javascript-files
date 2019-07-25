@@ -1,0 +1,142 @@
+import { Appear, Image, Notes } from "mdx-deck";
+import {
+  CodeSurferLayout,
+  CodeSurferColumnLayout,
+  Code,
+  Step,
+} from "code-surfer";
+import { Split } from "mdx-deck/layouts";
+
+---
+
+## Demo 1 - Annotating function parameters
+
+---
+
+<CodeSurferLayout>
+
+<Code
+  code={require("!!raw-loader!./src/Demo1/1.js").default}
+  lang="jsx"
+/>
+
+<Code
+  code={require("!!raw-loader!./src/Demo1/2.js").default}
+  lang="jsx"
+/>
+
+<Code
+  code={require("!!raw-loader!./src/Demo1/3.js").default}
+  lang="jsx"
+/>
+
+</CodeSurferLayout>
+
+---
+
+<Image
+  src={require("file-loader!./src/Demo1/demo.png")}
+  style={{
+    margin: "auto",
+    height: "100vh",
+    width: "100vw",
+    backgroundPosition: "center",
+    backgroundSize: "contain",
+  }}
+/>
+
+---
+
+## Demo 2 - Documenting code
+
+---
+
+<CodeSurferLayout>
+
+<Code
+  code={require("!!raw-loader!./src/Demo2/1.js").default}
+  lang="jsx"
+/>
+
+<Code
+  code={require("!!raw-loader!./src/Demo2/2.js").default}
+  lang="jsx"
+/>
+
+<Code
+  code={require("!!raw-loader!./src/Demo2/3.js").default}
+  lang="jsx"
+/>
+
+</CodeSurferLayout>
+
+---
+
+<Image
+  src={require("file-loader!./src/Demo2/demo.png")}
+  style={{
+    margin: "auto",
+    height: "100vh",
+    width: "100vw",
+    backgroundPosition: "center",
+    backgroundSize: "contain",
+  }}
+/>
+
+---
+
+---
+
+## Demo 3 - Type-checking JavaScript
+
+---
+
+<CodeSurferLayout>
+
+<Code
+  code={require("!!raw-loader!./src/Demo3/1.js").default}
+  lang="jsx"
+/>
+
+<Code
+  code={require("!!raw-loader!./src/Demo3/2.js").default}
+  lang="jsx"
+/>
+
+<Code
+  code={require("!!raw-loader!./src/Demo3/3.js").default}
+  lang="jsx"
+/>
+</CodeSurferLayout>
+
+---
+
+<Image
+  src={require("file-loader!./src/Demo3/demo.png")}
+  style={{
+    margin: "auto",
+    height: "100vh",
+    width: "100vw",
+    backgroundPosition: "center",
+    backgroundSize: "contain",
+  }}
+/>
+
+---
+
+<CodeSurferColumnLayout sizes={[1, 1]}>
+
+<Step title="Recap">
+  <Code
+    code={require("!!raw-loader!./src/Demo1/1.js").default}
+    lang="jsx"
+    subtitle="Before"
+  />
+  <Code
+    code={require("!!raw-loader!./src/Demo3/3.js").default}
+    lang="jsx"
+    subtitle="After"
+  />
+</Step>
+
+</CodeSurferColumnLayout>
